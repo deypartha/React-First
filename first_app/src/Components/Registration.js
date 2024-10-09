@@ -72,7 +72,21 @@ export class Registration extends Component {
     if(this.formValidation()){
       alert("Registration successful . . .")
       console.log(this.data)
-
+      let user = {
+        name: this.state.name,
+        email: this.state.email,
+        password: this.state.password,
+        c_password: this.state.c_password,
+        phone: this.state.phone
+      }
+      fetch('http://localhost:3000/0',{
+        method:'POST',
+        headers:{'Content-Type':'application/json'},
+        body: JSON.stringify(user)
+      })
+      .then(res=>(res.json()))
+      .then(data=>console.log(data))
+      .catch(error=>console.error('ERROR:',error));
     this.setState({
       name: '',
       email: '',
@@ -80,8 +94,7 @@ export class Registration extends Component {
       c_password: '',
       phone: '',
       errors:{}
-
-    })
+     })
     } 
   }
   render() {

@@ -17,6 +17,8 @@ import ListCompo from './Components/ListCompo';
 import FormDemo from './Components/FormDemo';
 import Login from './Components/Login';
 import Registration from './Components/Registration';
+import LifeCycle from './Components/LifeCycle';
+import FetchDataAPI from './Components/FetchDataAPI';
 // import SmallToCapital from './Components/SmallToCapital';
 // import GREET1 from './Components/GREET1';
 function App() {
@@ -46,6 +48,8 @@ function App() {
       {/* <FormDemo></FormDemo>
       <Login></Login> */}
       <Registration></Registration>
+      {/* <LifeCycle name='Ram'></LifeCycle>
+      <FetchDataAPI></FetchDataAPI> */}
     </div>
   );
 }
