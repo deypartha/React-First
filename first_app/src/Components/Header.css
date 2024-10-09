@@ -1,0 +1,16 @@
+header{
+    background-color: rgb(73, 129, 4);
+    color: antiquewhite;
+    padding: 20px;
+}
+/* h1{
+    float: left;
+} */
+/* #div{
+    display: flex;
+} */
+a{
+    text-decoration: none;
+    color: #fff;
+    margin-right: 20px;
+}

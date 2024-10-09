@@ -1,0 +1,30 @@
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(131, 244, 206);
+    color: blueviolet;
+}
+#links a{
+    text-decoration: none;
+    color: rgb(195, 26, 105);
+    font-size: 20px;
+    padding: 20px;
+}
+#btn button{
+    height: 40px;
+    width: 80px;
+    background-color: rgb(58, 115, 238);
+    font-size: 20px;
+    color: #fff;
+    border-radius: 10px;
+    border-style: none;
+    margin: 30px;
+}
+.ddd1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+

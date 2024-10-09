@@ -1,0 +1,27 @@
+.container-fluid{
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    /* background-color: blueviolet; */
+    text-decoration: none;
+}
+.container-fluid li{
+    text-align: center;
+    color: #fff;
+    list-style: none;
+}
+.container-fluid li:hover{
+    border: 1px solid red;
+    padding: 5px;
+    border-radius: 10px;
+}
+.ddd1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    margin: 30px;
+}
