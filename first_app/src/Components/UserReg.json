@@ -1,7 +1,28 @@
-[
+{
+  "Users": [
     {
-        "id": 1,
-        "name": "Ram",
-        "pass": "1234"
+      "id": "1",
+      "name": "Ram",
+      "email": "ram@gmail.com"
+    },
+    {
+      "id": "4cda"
+    },
+    {
+      "id": "2bb8",
+      "name": "Mr partha",
+      "email": "partha1251.be23@chitkara.edu.in",
+      "password": "123456",
+      "c_password": "123456",
+      "phone": "6297571084"
+    },
+    {
+      "id": "8f90",
+      "name": "Partha ",
+      "email": "deypartha222004@gmail.com",
+      "password": "124563",
+      "c_password": "124563",
+      "phone": "6297571084"
     }
-]
+  ]
+}

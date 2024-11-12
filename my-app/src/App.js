@@ -5,6 +5,7 @@ import Body from './Component/Body';
 import Footer from './Component/Footer';
 import About from './Component/About';
 import Login from './Component/Login'
+import Navbar from './Component/Navbar';
 // import {createBrowserRouter, routerProvider} from 'react-router-dom'
 function App() {
   // const router = createBrowserRouter([
@@ -23,6 +24,7 @@ function App() {
   // ])
   return (
     <div className="App">
+      <Navbar></Navbar>
        <Header></Header>
       {/* <routerProvider router = {router}></routerProvider> */}
      

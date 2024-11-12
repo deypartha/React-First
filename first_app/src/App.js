@@ -19,6 +19,11 @@ import Login from './Components/Login';
 import Registration from './Components/Registration';
 import LifeCycle from './Components/LifeCycle';
 import FetchDataAPI from './Components/FetchDataAPI';
+import LifeCycleForUpdate from './Components/LifeCycleForUpdate';
+import ComponentDidUp from './Components/ComponentDidUp';
+import LifeDemo from './Components/LifeDemo';
+// import UserEffectDemo from './Components/UserEffectDemo';
+import Comp1 from './Components/Comp1'; 
 // import SmallToCapital from './Components/SmallToCapital';
 // import GREET1 from './Components/GREET1';
 function App() {
@@ -47,9 +52,14 @@ function App() {
       {/* <ListCompo></ListCompo> */}
       {/* <FormDemo></FormDemo>
       <Login></Login> */}
-      <Registration></Registration>
+      {/* <Registration></Registration> */}
       {/* <LifeCycle name='Ram'></LifeCycle>
       <FetchDataAPI></FetchDataAPI> */}
+      {/* <LifeCycleForUpdate></LifeCycleForUpdate>
+      <ComponentDidUp></ComponentDidUp>
+      <LifeDemo></LifeDemo> */}
+      {/* <UserEffectDemo></UserEffectDemo> */}
+      <Comp1></Comp1>
     </div>
   );
 }

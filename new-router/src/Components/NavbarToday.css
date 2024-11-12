@@ -1,0 +1,13 @@
+#nav{
+    background-color: blueviolet;
+    padding: 20px;
+}
+#nav a{
+    color: #fff;
+    margin-left: 50px;
+    text-decoration: none;
+}
+#nav a.active{
+    color: brown;
+    font-size: 30px;
+}

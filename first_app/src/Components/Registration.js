@@ -70,32 +70,36 @@ export class Registration extends Component {
   handleSubmit = (event)=>{
     event.preventDefault();
     if(this.formValidation()){
-      alert("Registration successful . . .")
-      console.log(this.data)
-      let user = {
-        name: this.state.name,
-        email: this.state.email,
-        password: this.state.password,
-        c_password: this.state.c_password,
-        phone: this.state.phone
-      }
-      fetch('http://localhost:3000/0',{
-        method:'POST',
-        headers:{'Content-Type':'application/json'},
+      let {name, email, password, c_password, phone} = this.state
+      const user = {name, email, password, c_password, phone};
+      fetch("http://localhost:3001/Users",{
+        method: 'POST',
+        headers: {'Content-Type':'application/json'},
         body: JSON.stringify(user)
       })
-      .then(res=>(res.json()))
-      .then(data=>console.log(data))
-      .catch(error=>console.error('ERROR:',error));
-    this.setState({
-      name: '',
-      email: '',
-      password: '',
-      c_password: '',
-      phone: '',
-      errors:{}
-     })
-    } 
+      .then(response=>{
+        if(!response.ok){
+          throw new Error('network response was not ok');
+        }
+        return response.json();
+      })
+      .then(data=>{
+        console.log(data)
+        alert("Regisstration successful . . . ")
+        this.setState({
+          name: '',
+          email: '',
+          password: '',
+          c_password: '',
+          phone: '',
+          errors:{},
+         });
+      })
+      .catch(error=>{
+        console.error('ERROR:',error);
+        alert("Registration failed . . . ")
+      })
+    }
   }
   render() {
     let {name, email, password, c_password, phone, errors} = this.state

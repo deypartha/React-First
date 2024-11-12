@@ -1,0 +1,20 @@
+.navbar-light {
+    background-color: #ffffff;
+    color: #212121;
+  }
+  
+  .navbar-dark {
+    background-color: #212121;
+    color: #ffffff;
+  }
+  button{
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    color: #ffffff;
+    background-color: #212121;
+  }
+  button:hover{
+    background-color: #841818;
+    color: #fff;
+  }
